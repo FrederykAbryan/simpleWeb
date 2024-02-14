@@ -24,7 +24,7 @@ function App() {
           <>
             <Navbars />
             <Routes>
-              <Route path="/" element={<Auth />} />
+              <Route path="/" />
               <Route path="/home" element={<Hero />} />
               <Route path="/series" element={<Series />} />
               <Route path="/movies" element={<Movies />} />
