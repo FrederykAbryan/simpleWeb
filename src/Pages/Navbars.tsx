@@ -20,8 +20,8 @@ const Navbars = () => {
           )}
           <li>
             <SignedIn>
-              <SignOutButton signOutCallback={() => redirect('/')} >
-                <button>Sign Out</button>
+              <SignOutButton >
+                <button onClick={() => redirect("/")}>Sign Out</button>
               </SignOutButton>
             </SignedIn>
           </li>
