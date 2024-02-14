@@ -1,6 +1,7 @@
 ## Installation
 
 run "npm install" to install all the needed dependency
+
 run "npm run dev" to run the web
 
 # React + TypeScript + Vite
