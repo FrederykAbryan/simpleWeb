@@ -1,4 +1,4 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Navigate, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Navbars from './Pages/Navbars';
 import Series from "./Pages/Series";
 import Movies from "./Pages/Movies";
@@ -24,7 +24,7 @@ function App() {
           <>
             <Navbars />
             <Routes>
-              <Route path="/" />
+              <Route path="/" element={<Navigate to={"/home"}/>} />
               <Route path="/home" element={<Hero />} />
               <Route path="/series" element={<Series />} />
               <Route path="/movies" element={<Movies />} />
