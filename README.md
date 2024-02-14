@@ -1,8 +1,7 @@
 ## Installation
 
-Install as you would normally install a contributed Drupal module. For further
-information, see
-[Installing Drupal Modules](https://www.drupal.org/docs/extending-drupal/installing-drupal-modules).
+run "npm install" to install all the needed dependency
+run "npm run dev" to run the web
 
 # React + TypeScript + Vite
 
