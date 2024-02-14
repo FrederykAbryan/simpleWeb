@@ -1,4 +1,7 @@
-## Installation
+#Deployed Web
+Check the deployed web here : (https://keen-biscotti-b59ed7.netlify.app/)
+
+# Installation
 
 run "npm install" to install all the needed dependency
 
