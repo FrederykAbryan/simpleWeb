@@ -1,4 +1,4 @@
-import { Flex } from 'antd'
+import { Flex, Skeleton } from 'antd'
 import { showSeries } from '../API/Queries'
 import MovieContainer from '../components/MovieContainer'
 import { Result } from '../types/TypesMovies'
@@ -6,7 +6,9 @@ import { Result } from '../types/TypesMovies'
 const Series = () => {
   const seriesDt = showSeries()
   if (seriesDt.isPending) {
-    return <div>Loadingg....</div>
+    return <Flex align='start' justify='center'>
+      <Skeleton.Node active style={{ width: '80vw', height: '70vh' }} />
+    </Flex>
   }
   return (
     <>

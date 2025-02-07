@@ -1,12 +1,14 @@
 import MovieContainer from '../components/MovieContainer'
 import { showMovies } from '../API/Queries'
 import { Result } from '../types/TypesMovies'
-import { Flex } from 'antd'
+import { Flex, Skeleton } from 'antd'
 
 const Movies = () => {
   const moviesDt = showMovies()
   if (moviesDt.isPending) {
-    return <div>Loadingg....</div>
+    return <Flex align='start' justify='center'>
+      <Skeleton.Node active style={{ width: '80vw', height: '70vh' }} />
+    </Flex>
   }
   return (
     <>
