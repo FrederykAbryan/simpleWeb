@@ -1,3 +1,4 @@
+import { Flex } from 'antd'
 import { showSeries } from '../API/Queries'
 import MovieContainer from '../components/MovieContainer'
 import { Result } from '../types/TypesMovies'
@@ -10,13 +11,13 @@ const Series = () => {
   return (
     <>
       <section className='px2'>
-        <div className='flex flex-wrap'>
+        <Flex wrap gap={50} align='start' justify='center'>
           {
             seriesDt.data.results.map((movie: Result) => (
               <MovieContainer key={movie.id} results={movie} />
             ))
           }
-        </div>
+        </Flex>
       </section>
     </>
   )
