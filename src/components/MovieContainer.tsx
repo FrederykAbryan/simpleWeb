@@ -10,7 +10,7 @@ const MovieContainer = ({ results }: result) => {
 
   return (
     <Card hoverable style={{ width: 300 }} styles={{ body: { padding: 0, overflow: 'hidden' } }}
-    cover={<img src={imgUrls} alt={`${results.title || results.name}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }}/>}
+    cover={<img src={imgUrls} alt={`${results.title || results.name}`} style={{ width: '200', height: '400'}}/>}
     >
       {/* <img src={imgUrls} alt={`${results.title || results.name}`} className="rounded-t-lg h-full w-full object-cover" /> */}
       <div className="p-4">
